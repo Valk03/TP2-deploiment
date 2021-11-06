@@ -1,27 +1,31 @@
-# Resultats
+# App resultats
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+cette exercise revoir les elements vue en classe pour generer une page affichant les resultats pour des etudiants. 
 
-## Development server
+* Créez un nouveau projet angular
+* Dans ce projet créez deux components alert et success
+* Le component success doit afficher un paragraphe "Superieur à la moyenne" avec une couleur de fond vert et une bordure vert foncé
+* Le component error doit afficher un paragraphe "Sous la note de passage" avec une couleur de fond rouge/rosé pale et une bordure rouge foncé.
+* Dans votre class AppComponent insérez le vecteur suivant:
+```Typescript
+  uneclass = [
+    { nom: 'Brionna Ernser', note: 54 },
+    { nom: 'Rowan Terry', note: 67 },
+    { nom: 'Patricia Lehner', note: 45 },
+    { nom: 'Jade Kohler ', note: 98 },
+    { nom: 'Hattie Gleichner', note: 77 },
+    { nom: 'Alycia Gusikowski', note: 67 },
+    { nom: 'Travis Emmerich', note: 57 },
+    { nom: 'Jena Wiegand', note: 60 },
+    { nom: 'Vella Leffler', note: 66 },
+    { nom: 'Marcelle Morissette', note: 65 },
+    { nom: 'Allie Haley', note: 88 }
+  ];
+```
+* Creer un page qui affiche:
+  * La moyenne du groupe avec deux décimals
+  * Le résultat pour chaque élève en utilisant la class bootstrap `progress`
+  * Pour les élèves ayant un résultat inférieur à la note de passage de 60% fait afficher le component alert
+  * Pour les élèves ayant un résultat supérieur à la moyenne afficher le component success
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+NOTE: Un example d'affichage est fournit just comme référence mais vous êtez invité à créer comme vous le désirez tant que les éléments specifiés sont affichés.
